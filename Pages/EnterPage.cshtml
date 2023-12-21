@@ -1,19 +1,27 @@
 ﻿@page
 @model WebB.Pages.EnterPageModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<link rel="stylesheet" href="css/EnterPStyle.css" asp-append-version="true">
 @{
 }
+<div class="center-block">
+	<div class="Content">
+		<div class="addText">
+			</br>
+			<div class="addTextTitle">Вход</div>
+			</br>
+			<form method="post">
+				
+					<div>Введите логин</div>
+					<input type="text" name="username" required/>
+					</br>
+					<div>Введите пароль</div>
+					<input type="text" name="password" required/>
+					<br /></br>
+					<input type="submit" value="Отправить"/>
+				
+			</form>
 
-<div class="addText">
-	<div class="addTextTitle">Вход</div>
-	<form method="post">
-		<ul>
-			<li><div>Введите логин</div></li>
-			<li><input type="text" name="username" required/></li>
-			<li><div>Введите пароль</div></li>
-			<li><input type="text" name="password" required/></li>
-			<li><input type="submit" value="Отправить"/></li>
-		</ul>
-	</form>
-
+			</div>
+    </div>
 </div>

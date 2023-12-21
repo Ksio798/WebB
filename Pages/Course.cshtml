@@ -1,10 +1,22 @@
 ﻿@page
 @model WebB.Pages.CourseModel
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<link rel="stylesheet" href="css/CourseStyle.css" asp-append-version="true">
 @{
 }
-
-<table >
+<a asp-page="Loginpage">
+    <div class="full-width-button">
+        <button>
+            <div class="arrow-container">
+                <span class="arrow"></span>
+            </div>
+            <p>
+                Страница входа
+            </p>
+        </button>
+    </div>
+</a>
+<table style="my-table" >
     <col width="500" />
     <col width="250" />
     <col width="250" />
@@ -69,7 +81,7 @@
             <br />
             <p>Белорусских рублей</p>
         </td>
-        <td>3,17 &nbsp;<div class="arrow-down"></div> &nbsp;<div class="arrow-down"></div></td>
+        <td>3,17 &nbsp;<div class="arrow-down"></div> </td>
         <td>3.8 &nbsp;<div class="arrow-down"></div></td>
     </tr>
     <tr>

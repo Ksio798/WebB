@@ -1,12 +1,28 @@
 ﻿@page
 @model WebB.Pages.AddressModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @using WebB.Data;
+<link rel="stylesheet" href="css/AddressStyle.css" asp-append-version="true">
 @{
 }
-
-<table >
+<a asp-page="Loginpage">
+    <div class="full-width-button">
+        <button>
+            <div class="arrow-container">
+                <span class="arrow"></span>
+            </div>
+            <p>
+                Страница входа
+            </p>
+        </button>
+    </div>
+</a>
+<table class="my-table">
     <col width="570" />
     <col width="430" />
+    <tr>
+        <th>Отделения и банкоматы</th>
+    </tr>
     @foreach (var cashMachine in Database.Instans.CashMachines)
     {
 
