@@ -1,7 +1,7 @@
 ﻿.upLine {
-    background-color: #d8d6d6;
+    background-color: #b8f8fce6;
     margin-bottom: 30px;
-    height:fit-content;
+    height: fit-content;
 }
 
 .Name {
@@ -17,4 +17,11 @@ li {
 
 ul {
     display: flex;
+}
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color: black;
 }
