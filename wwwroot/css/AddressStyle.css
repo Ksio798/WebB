@@ -33,5 +33,17 @@ p {
     border-bottom: 10px solid transparent;
     border-right: 10px solid darkblue; 
 }
-.my-table {
-    margin-top: 35px; 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border: solid;
+    border-width: 1px 0;
+    border-color: darkgray;
+}
+th {
+    text-align: left;
+    color: dimgrey;
+}

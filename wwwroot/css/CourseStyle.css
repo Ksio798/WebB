@@ -66,3 +66,12 @@ th{
     border-top: 5px solid red;
     display: inline-block;
 }
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+tr {
+    border: solid;
+    border-width: 1px 0;
+    border-color: darkgray;
+}
